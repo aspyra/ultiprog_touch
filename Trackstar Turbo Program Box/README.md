@@ -5,26 +5,34 @@ description, photos TBD
 ---
 ## Commands list
 
-|HEX|DEC|Takes argument|Response length|Function|
-|:-:|:-:|:-:|:-:|-|
-|D5|213|no|1 byte|Discover device?|
-|D7|214|no|4 bytes|Read device ID|
-|D8|215|no|20 bytes|Read settings|
-|DE|222|no|1 byte|Reset settings to default values|
-|DF|223|no|1 byte|Save changes to EEPROM?|
-|E1|225|[yes](#operation-mode-0xe1)|1 byte|Set Operating Mode|
-|E2|226|[yes](#drag-brake-0xe2)|1 byte|Set Drag Brake|
-|E3|227|[yes](#voltage-cutoff-0xe3)|1 byte|Set Voltage Cutoff|
-|E4|228|[yes](#punch-profile-0xe4)|1 byte|Set Punch Profile|
-|E5|229|[yes](#brake-strength-0xe5)|1 byte|Set Brake Strength|
-|E7|231|[yes](#initial-brake-0xe7)|1 byte|Set Initial Brake|
-|E8|232|[yes](#neutral-deadband-0xe8)|1 byte|Set Neutral Deadband|
-|E9|233|[yes](#boost-timing-(0xe9))|1 byte|Set Boost Timing|
-
+|HEX|DEC|Function|
+|:-:|:-:|-|
+|D5|213|Discover device?|
+|D7|214|Read device ID|
+|D8|215|Read settings|
+|DE|222|Reset settings to default values|
+|DF|223|Save changes to EEPROM?|
+|E1|225|Set [Operating Mode](#operation-mode-0xe1)|
+|E2|226|Set [Drag Brake](#drag-brake-0xe2)|
+|E3|227|Set [Voltage Cutoff](#voltage-cutoff-0xe3)|
+|E4|228|Set [Punch Profile](#punch-profile-0xe4)|
+|E5|229|Set [Brake Strength](#brake-strength-0xe5)|
+|E6|230|Set [Reverse Speed](#reverse-speed-0xe6)|
+|E7|231|Set [Initial Brake](#initial-brake-0xe7)|
+|E8|232|Set [Neutral Deadband](#neutral-deadband-0xe8)|
+|E9|233|Set [Boost Timing](#boost-timing-0xe9)|
+|EA|234|Set [Turbo Slope](#turbo-slope-0xea)|
+|EB|235|Set [Temperature Set](#temperature-set-0xeb)|
+|EC|236|Set [Boost Timing](#boost-timing-0xec)|
+|ED|237|Set [Boost Timing RPM](#boost-timing-rpm-0xed)|
+|EE|238|Set [Turbo Delay](#turbo-delay-0xee)|
+|EF|239|Set [Boost Timing ACC](#boost-timing-acc-0xef)|
+|F0|240|Set [Drive Frequency](#drive-frequency-0xf0)|
+|F1|241|Set [Brake Frequency](#brake-frequency-0xf1)|
 ---
 ## Command arguments
 
-An argument is sent ~22ms after the command as a single byte. The ESC immediatelly responds with 0x01. 
+An argument is sent ~22ms after the command as a single byte. The ESC immediatelly responds with 0x01. Default values are marked in __bold__. TBD
 
 ### Operation Mode (0xE1)
 |HEX|DEC|Value|
@@ -201,4 +209,3 @@ An argument is sent ~22ms after the command as a single byte. The ESC immediatel
 |02|2|4kHz|
 |03|3|8kHz|
 |04|4|16kHz|
-
