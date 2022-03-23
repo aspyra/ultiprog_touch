@@ -12,14 +12,14 @@ description, photos TBD
 |D8|215|no|20 bytes|Read settings|
 |DE|222|no|1 byte|Reset settings to default values|
 |DF|223|no|1 byte|Save changes to EEPROM?|
-|E1|225|[yes](#operation-mode-(0xE1))|1 byte|Set Operating Mode|
-|E2|226|[yes](#drag-brake-(0xE2))|1 byte|Set Drag Brake|
-|E3|227|[yes](#voltage-cutoff-(0xE3))|1 byte|Set Voltage Cutoff|
-|E4|228|[yes](#punch-profile-(0xE4))|1 byte|Set Punch Profile|
-|E5|229|[yes](#brake-strength-(0xE5))|1 byte|Set Brake Strength|
-|E7|231|[yes](#initial-brake-(0xE7))|1 byte|Set Initial Brake|
-|E8|232|[yes](#neutral-deadband-(0xE8))|1 byte|Set Neutral Deadband|
-|E9|233|[yes](#boost-timing-(0xE9))|1 byte|Set Boost Timing|
+|E1|225|[yes](#operation-mode-0xe1)|1 byte|Set Operating Mode|
+|E2|226|[yes](#drag-brake-0xe2)|1 byte|Set Drag Brake|
+|E3|227|[yes](#voltage-cutoff-0xe3)|1 byte|Set Voltage Cutoff|
+|E4|228|[yes](#punch-profile-0xe4)|1 byte|Set Punch Profile|
+|E5|229|[yes](#brake-strength-0xe5)|1 byte|Set Brake Strength|
+|E7|231|[yes](#initial-brake-0xe7)|1 byte|Set Initial Brake|
+|E8|232|[yes](#neutral-deadband-0xe8)|1 byte|Set Neutral Deadband|
+|E9|233|[yes](#boost-timing-(0xe9))|1 byte|Set Boost Timing|
 
 ---
 ## Command arguments
